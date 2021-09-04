@@ -25,7 +25,7 @@ async def start(bot, update):
             await update.reply_text(
                 text="<b>🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹</b>",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text=" 📢 Join My Update Channel 📢", url=f"https://t.me/{MT_UPDATE}")]
+                    [ InlineKeyboardButton(text=" 📢 Join My Update Channel 📢", url=f"https://t.me/{neww_box}")]
               ])
             )
             return
@@ -55,13 +55,13 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    '🔔Join Main Channel🔔', url=f"https://t.me/{MT_CHANNEL}"
+                                    '🔔Join Main Channel🔔', url=f"https://t.me/{neww_box}"
                                 )
                         ],
                         [
                             InlineKeyboardButton
                                 (
-                                    '🤖 Bot Updates🤖', url=f"t.me/{MT_UPDATES}"
+                                    '🤖 Owner🤖', url=f"t.me/{G9037944937}"
                                 )
                         ]
                     ]
@@ -73,8 +73,8 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('🗣️ Group', url=f'https://t.me/{MT_GROUP}'),
-        InlineKeyboardButton('📢 Channel', url =f'https://t.me/{MT_CHANNEL}')
+        InlineKeyboardButton('🗣️ Group', url=f'https://t.me/{relax_movies}'),
+        InlineKeyboardButton('📢 Channel', url =f'https://t.me/{neww_box}')
     ],[
         InlineKeyboardButton('🤔Help', callback_data="help"),
         InlineKeyboardButton('About😎', callback_data="about"),
@@ -96,8 +96,8 @@ async def start(bot, update):
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
 async def help(bot, update):
     buttons = [[
-        InlineKeyboardButton('Support', url='t.me/Mo_Tech_Group'),
-        InlineKeyboardButton('Bot Updates', url=f't.me/{MT_UPDATES}')
+        InlineKeyboardButton('Channel', url=f't.me/{neww_box}'),
+        InlineKeyboardButton('Group', url=f't.me/{relax_movies}')
     ],[
         InlineKeyboardButton('🖥️ How To Own This Bot 🖥️', url=f'{MT_LINK}')
     ],[   
